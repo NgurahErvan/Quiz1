@@ -37,7 +37,7 @@ nav ul li{
 nav ul li a{
     color: #ffffff;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 18px;
     position: relative;
 }
 
@@ -57,10 +57,10 @@ nav ul li a:hover::after{
 }
 .header-text{
     margin-top: 15%;
-    font-size: 30px;
+    font-size: 33px;
 }
 .header-text h1{
-    font-size: 60px;
+    font-size: 53px;
     margin-top: 20px;
 }
 .header-text span{
@@ -92,12 +92,12 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 .sub-title{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     color: #ffffff;
 }
 .about-col-2 p{
-    font-size: 20px;
+    font-size: 15px;
 }
 .tab-titles {
     display: flex;
@@ -129,7 +129,7 @@ nav ul li a:hover::after{
     margin: 20px 0;
 }.tab-contents ul li span{
     color: #ad0000;
-    font-size: 18px;
+    font-size: 17px;
 }
 .tab-contents{
     display: none;
@@ -150,7 +150,7 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 .home-col-2 p{
-    font-size: 25px;
+    font-size: 17px;
 }
 
 /* --------food--------- */
