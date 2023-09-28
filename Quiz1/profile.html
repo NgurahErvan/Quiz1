@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1 - Hometown Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="profile">
+        <div class="container">
+            <nav>
+                <img src="images/Logo1.png" class="Logo">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                <li> <a href="profile.html">Profile</a></li>
+                <li> <a href="hometown.html">Hometown</a></li>
+                <li> <a href="food.html">Food</a></li>
+                <li> <a href="tourist.html">Tourist Place</a></li>
+                </ul>
+            </nav>
+            <div class="row">
+                <!-- dibagi menjadi 2 kolom -->
+                <div class="about-col-1">
+                    <img src="images/profile.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm I Gusti Ngurah Ervan Juli Ardana, born in the northern region of Bali on July 5, 2003. I'm presently enrolled at the Institute of Technology, majoring in Informatics. My choice of this major is driven by my deep fascination with the ever-evolving world of technology.
+
+<br><br>At this moment, I am particularly intrigued by the study of AI (Artificial Intelligence) and machine learning, because to the swift advancements occurring in our era. These fields captivate my interest due to their rapid development and their potential to shape the future.
+
+<br> <br>Outside of my academic pursuits, I find enjoyment in two particular interests: listening rock music, which resonates with me on a profound level, and sports, spesifically football. These hobbies bring balance and joy to my life.
+                    </p>
+                    <!-- mengisi sub judul -->
+                    <div class = "tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    </div>
+                    <!-- mengisi isi sub judul -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Management</span><br>Manage Some data</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - 2022 </span><br>Data Management Staff of Maba Cup ITS 2021</li>
+                            <li><span>2021 - 2022</span><br>Data Management Staff of Schematics ITS 2021</li>
+                            <li><span>2023 - Current</span><br>Event Expert Staff of Schematics Reeva 2023</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2015 - 2018</span><br>SMP N 2 Singaraja</li>
+                            <li><span>2018 - 2021</span><br>SMA N 1 Singaraja</li>
+                            <li><span>2021 - Current</span><br>Institut Teknologi Sepuluh Nopember</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- script untuk mengatur profile sub-title -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        // funtion untuk mengganti konten dan garis merah pada sub- title
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+</html>
